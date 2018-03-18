@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>popup</title>
+  
+    <link rel="stylesheet" href="../css/style.css">
+    <style type="text/css">
+    	body {padding: 0px; border: 0px; overflow: hidden; margin: 0px;}
+    	 div {
+      cursor: pointer;
+      text-align: center;
+      padding: 1px 3px;
+      width: 60px;
+      margin-top: 1px;
+    }
+    	.item:hover {background: grey;}
+
+
+    table, caption, tbody, tfoot, thead, tr, th, td {
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+    }
+    
+    table {
+      
+        border:1px solid #d3d3d3;
+        background:#fefefe;
+
+        width:540px;
+        margin:5% auto 0;
+        -moz-border-radius:5px; /* FF1+ */
+        -webkit-border-radius:5px; /* Saf3-4 */
+        border-radius:5px;
+        -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    th, td {padding:8px 18px 8px; text-align:center; }
+    
+    th {padding-top:12px; text-shadow: 1px 1px 1px #fff; background-color:#8dca6b;}
+    
+    td {border-top:1px solid #e0e0e0; border-right:1px solid #e0e0e0;}
+    
+    tr.odd-row td {background:#f6f6f6;}
+    
+    td.first, th.first {text-align:left}
+    
+    td.last {border-right:none;}
+    
+    
+    td {
+        background: -moz-linear-gradient(100% 25% 90deg, #fefefe, #f9f9f9);
+        background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f9f9f9), to(#fefefe));
+    }
+    
+    tr.odd-row td {
+        background: -moz-linear-gradient(100% 25% 90deg, #f6f6f6, #f1f1f1);
+        background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f1f1f1), to(#f6f6f6));
+    }
+    
+   
+    tr:first-child th.first {
+        -moz-border-radius-topleft:5px;
+        -webkit-border-top-left-radius:5px; /* Saf3-4 */
+        }
+
+    
+    tr:first-child th.last {
+        -moz-border-radius-topright:5px;
+        -webkit-border-top-right-radius:5px; /* Saf3-4 */
+        }
+    
+    tr:last-child td.first {
+        -moz-border-radius-bottomleft:5px;
+        -webkit-border-bottom-left-radius:5px; /* Saf3-4 */
+     }
+    
+    tr:last-child td.last {
+        -moz-border-radius-bottomright:5px;
+        -webkit-border-bottom-right-radius:5px; /* Saf3-4 */
+        }
+	
+    </style>
+  <script type="text/javascript" src="../script/jquery-1.7.2.min.js"></script>
+
+</head>
+<body>
+<div id="login" class="item">登录</div>
+<div id="help" class="item">帮助</div>
+<div id="wordbook" class="item">单词本</div>
+
+<div class="cd-popup3">
+        <div class="cd-popup-container3">
+            <h2>wordbook</h2>
+            <div class="cd-buttons">
+                <table id="tb_wordbook" cellspacing="0">
+                    <tr><th>序号</th><th>单词</th><th>释义</th><th>删除</th></tr>
+                    <tr><td>1</td><td>apple</td><td>苹果</td><td><a href="javascript:;">delete</a></td></tr>
+                    <tr><td>2</td><td>cat</td><td>猫</td><td><a>delete</a></td></tr>
+                    
+
+                </table>
+            </div>
+            <a href="#0" class="cd-popup-close">close</a>
+        </div>
+    </div>
+
+  <script type="text/javascript" src="popup.js"></script>  
+</body>
+</html>

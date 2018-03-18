@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/login_sign.css">
+</head>
+<body>
+<header>
+    <div class="header-line"></div>
+</header>
+<div class="content">
+    <h1 class="content-title">创建账户</h1>
+    <div class="content-form">
+        <form method="post" action="" onsubmit="return submitTest()">
+            <div id="change_margin_1">
+                <input class="user" type="text" name="user" id="user" placeholder="请输入英文或英文数字组合用户名">
+            </div>
+            <!-- input的value为空时弹出提醒 -->
+            <p id="remind_1_1"></p>
+            <div id="change_margin_2">
+                <input class="password" type="password" name="password" id="password" placeholder="请输入密码">
+            </div>
+            <!-- input的value为空时弹出提醒 -->
+            <p id="remind_2_1"></p>
+            <div id="change_margin_3">
+                <input class="mailbox" type="text" name="mailbox" id="mailbox" placeholder="请输入邮箱">
+            </div>
+            <!-- input的value为空时弹出提醒 -->
+            <p id="remind_3"></p>
+            <div id="change_margin_4">
+                <input class="content-form-signup" type="button" id="signup" value="创建账户">
+            </div>
+        </form>
+    </div>
+    <div class="content-login-description">已经拥有账户？</div>
+    <div><a class="content-login-link" href="login.html">登录</a></div>
+</div>
+<script src="../script/jquery-1.7.2.min.js"></script>
+<script src="../script/common_form_test.js"></script>
+<script src="../script/check_signup.js"></script>
+</body>
+</html>

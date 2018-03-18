@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="servlet-api">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-tomcat-9.0.1/lib/servlet-api.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/lib/commons-beanutils-1.8.0.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/lib/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/lib/commons-lang-2.5.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/lib/ezmorph-1.0.6.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/lib/json-lib-2.4-jdk15.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/lib/mail.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/lib/mysql-connector-java-5.1.7-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

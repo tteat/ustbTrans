@@ -1,0 +1,49 @@
+{
+  "name": "word translation",
+  "version": "0.0.1",
+  "manifest_version": 2,
+
+  // 简单描述
+  "description": "chrome plug word translation",
+  "icons": {
+    "16": "image/icon16.png",
+    "48": "image/icon48.png"
+  },
+  // 选择默认语言
+  //"default_locale": "en",
+
+  // 浏览器小图表部分
+  "browser_action": {
+    "default_title": "划词翻译",
+    "default_icon": "image/icon16.png",
+    "default_popup": "html/popup.html"
+  },
+  
+
+  "background": {  
+    "scripts": ["background/bg.js"]  
+  },  
+ 
+  // 引入一个脚本
+  "content_scripts": [
+    {
+      "js": ["script/test.js","script/jquery.js","script/callAPI.js"],
+      "css":["css/test.css","css/lrtk.css"],
+      // 在什么情况下使用该脚本
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      // 什么情况下运行【文档加载开始】
+      "run_at": "document_start"
+    }
+  ],
+  // 应用协议页面
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "tabs",
+    "cookies",
+    "<all_urls>"
+  ]
+}

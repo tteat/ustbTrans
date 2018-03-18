@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>我的一天</title>
+	<script src="js/jQuery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			//var t = $("iframe").contents().find("a").css('pointer-events', 'none');
+			//$("iframe").contents().find("a").removeAttr('href');
+			//$("iframe").contents().find("*").removeAttr('onmousedown onclick');
+			var iframe = document.getElementById("fra"); 
+			//iframe.src = "ex.html"; 
+			if (iframe.attachEvent){ 
+				iframe.attachEvent("onload", function(){ 
+				//vat txt = document.getElementsByTagName('iframe')[0].contentWindow;
+				$("iframe").contents().find("#iii").onmouseup(function (e) {
+						var selObj = iframe.contentWindow.getSelection();
+						var range  = selObj.getRangeAt(0);
+						var st = range.startOffset;
+						var end = range.endOffset;
+						console.log(st);
+			});
+			});
+			} else { 
+			iframe.onload = function(){ 
+			//vat txt = document.getElementsByTagName('iframe')[0].contentWindow.getSelection();
+				//console.log(txt.toString());
+				$("iframe").contents().find("#iii").mouseup(function (e) {
+						var selObj = iframe.contentWindow.getSelection();
+						var range  = selObj.getRangeAt(0);
+						var st = range.startOffset;
+						var end = range.endOffset;
+						console.log(st);
+						
+
+			});
+			}; 
+			} 
+
+		});
+
+	</script>
+</head>
+<body>
+	<iframe src="ex.html" id = "fra" name = "fram"></iframe>
+	<div>I am a boy</div>
+</body>
+</html>
